@@ -45,7 +45,7 @@ export const create = async (data) => {
     const params = [
         data.name || null,
         data.mobile || null,
-        data.password || null // Ensure this is hashed (e.g., bcrypt) before passing to model
+        data.password || null // Ensure this is hashed (e.g., bcrypt) before passing to models
     ];
 
     const sanitizedParams = params.map(v => v === undefined ? null : v);
